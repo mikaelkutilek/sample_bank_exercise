@@ -14,4 +14,8 @@
     <PackageReference Include="coverlet.collector" Version="3.1.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\sample_bank_exercise_business\sample_bank_exercise_business.csproj" />
+  </ItemGroup>
+
 </Project>
