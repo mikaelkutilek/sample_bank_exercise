@@ -13,13 +13,14 @@ namespace sample_bank_exercise_business.entities
 
         public CheckingAccount(string name) : base(name, AccountType.Checking)
         {
-
+            // no extra work here - since this is using the default processor.
         }
 
 
 
         public override void ExecuteTransaction(ITransaction transaction)
         {
+
             throw new NotImplementedException();
         }
     }

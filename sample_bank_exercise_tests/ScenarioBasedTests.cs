@@ -28,7 +28,7 @@ public class ScenarioBasedTests
 
 
 
-        bank.Accounts.Find(b => b.Name == "Investment Individual").ExecuteTransaction(new Transaction());
+        //bank.Accounts.Find(b => b.Name == "Investment Individual").ExecuteTransaction(new Transaction());
 
 
 
