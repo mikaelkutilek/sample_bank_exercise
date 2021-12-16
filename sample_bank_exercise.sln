@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sample_bank_exercise_business", "sample_bank_exercise_business\sample_bank_exercise_business.csproj", "{6735DFCD-58D5-4462-8F63-E6FFA38501C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sample_bank_exercise_interfaces", "sample_bank_exercise_interfaces\sample_bank_exercise_interfaces.csproj", "{D91C56DC-B05E-4C68-85B1-80A54C5FA0C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sample_bank_exercise_tests", "sample_bank_exercise_tests\sample_bank_exercise_tests.csproj", "{10003E1A-2BBA-4860-AA1D-8B67EE2038C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6735DFCD-58D5-4462-8F63-E6FFA38501C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6735DFCD-58D5-4462-8F63-E6FFA38501C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6735DFCD-58D5-4462-8F63-E6FFA38501C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6735DFCD-58D5-4462-8F63-E6FFA38501C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D91C56DC-B05E-4C68-85B1-80A54C5FA0C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D91C56DC-B05E-4C68-85B1-80A54C5FA0C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D91C56DC-B05E-4C68-85B1-80A54C5FA0C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D91C56DC-B05E-4C68-85B1-80A54C5FA0C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10003E1A-2BBA-4860-AA1D-8B67EE2038C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10003E1A-2BBA-4860-AA1D-8B67EE2038C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10003E1A-2BBA-4860-AA1D-8B67EE2038C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10003E1A-2BBA-4860-AA1D-8B67EE2038C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
