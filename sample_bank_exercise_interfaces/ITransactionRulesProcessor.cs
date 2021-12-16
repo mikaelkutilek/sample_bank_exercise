@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace sample_bank_exercise_interfaces
 {
-    public interface ITransaction
+    public interface ITransactionRulesProcessor
     {
+        public bool canProcessTransaction(Transaction transaction, out string reason);
     }
 }

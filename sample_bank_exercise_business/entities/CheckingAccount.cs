@@ -11,17 +11,42 @@ namespace sample_bank_exercise_business.entities
     public class CheckingAccount : Account
     {
 
-        public CheckingAccount(string name) : base(name, AccountType.Checking)
+        public CheckingAccount(string name, double startingBalance) : base(name, AccountType.Checking, startingBalance)
         {
-            // no extra work here - since this is using the default processor.
+            TransactionProcessor = new DefaultTransactionRulesProcessor();
         }
 
 
-
-        public override void ExecuteTransaction(ITransaction transaction)
+        //consolidate these in base? shared between account subclasses.
+        public override bool ExecuteTransaction(Transaction transaction)
         {
-
-            throw new NotImplementedException();
+            string reason = "";
+            if (TransactionProcessor.canProcessTransaction(transaction, out reason))
+            {
+                this.TransactionLogs.Log.Add(transaction.ExecuteTransaction(this));
+                return true;
+            }
+            else
+            {
+                this.TransactionLogs.Log.Add(new TransactionLogItem(reason));
+                return false;
+            }
         }
+
+        public override bool ExecuteTransaction(Transaction transaction, Account targetAccount)
+        {
+            string reason = "";
+            if (TransactionProcessor.canProcessTransaction(transaction, out reason))
+            {
+                this.TransactionLogs.Log.Add(transaction.ExecuteTransaction(this, targetAccount));
+                return true;
+            }
+            else
+            {
+                this.TransactionLogs.Log.Add(new TransactionLogItem(reason));
+                return false;
+            }
+        }
+
     }
 }

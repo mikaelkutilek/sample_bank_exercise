@@ -4,11 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace sample_bank_exercise_business.entities
+//normally this would be like an ILogger - but i got lazy.
+
+namespace sample_bank_exercise_interfaces
 {
     public class TransactionLog
     {
-        List<TransactionLogItem> Log { get; set; }
+        public List<TransactionLogItem> Log { get; private set; }
 
 
         public TransactionLog()
@@ -20,6 +22,5 @@ namespace sample_bank_exercise_business.entities
         {
             Log.ForEach(item => item.displayLogEntry());
         }
-
     }
 }

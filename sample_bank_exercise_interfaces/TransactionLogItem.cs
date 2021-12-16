@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace sample_bank_exercise_business.entities
+namespace sample_bank_exercise_interfaces
 {
     public class TransactionLogItem
     {
